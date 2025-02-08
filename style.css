@@ -333,7 +333,8 @@ section{
     font-weight: 300;
     border-radius: 10px;
     transition: background-color 0.5s;
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .services-list div i{
     font-size: 50px;
@@ -380,13 +381,14 @@ display: inline-block;
     
 }
 .work img{
-    width: 100%;
+    width: 250px;
     border-radius: 10px;
     display: block;
+    cursor: pointer;
     transition: transform 0.5s;
 }
 .layer{
-    width: 100%;
+    width: 265px;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
@@ -624,6 +626,11 @@ nav .fas{
         margin-right: 20px;
        }
 
+    .services-list{
+        flex-basis: 100%;
+    }
+
+
        .contact-left, .contact-right{
         flex-basis: 100%;
        }
@@ -638,9 +645,14 @@ nav .fas{
 
   @media(max-width:600px){
     .home img{
-        width: 50%;
-       height: 40vh;
-       top: 40px;
-       right: 2px;
+        width: 60%;
+       height: 30vh;
+       right: 3px;
+       top: 10px;
+       margin-bottom: 20px;
+       position: relative;
+    }
+    .home{
+        flex-basis: 100%;
     }
   }
